@@ -1,9 +1,9 @@
-from django.urls import path, include
+from django.urls import path,include
 from . import views
 
 from rest_framework import routers # restful api version
 
-app_name = 'rest_api_example'
+app_name = 'rest_api'
 
 router = routers.DefaultRouter()
 router.register(r'user', views.UserViewSet)
